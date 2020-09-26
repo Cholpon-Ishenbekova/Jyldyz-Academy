@@ -7,86 +7,171 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="slick/slick.css">
+	<link rel="stylesheet" href="slick/slick-theme.css">
 </head>
 <body>
-	<section class="our-team">
-            <div class="container-fluid container">
-            <h1 class="team-title">
-                Our team
-            </h1>
-            <ul class="our-team-list">
-                <li class="parti-list-item">
-                    <img src="img/timur-img.png" alt="Timur-Mone" class="parti-img">
-                    <div class="parti-about">
-                        <h2 class="parti-title">Timur Mone</h2>
-                        <span class="parti-major">Marketing</span>
-                        <p class="parti-txt">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                            Aliquam elit malesuada ligula viverra
-                        </p>
-                    </div>
+    <!-- Navigation -->
+
+<nav class="navbar navbar-expand-lg navbar-light">
+	<div class="container">
+		<a href="#" class="navbar-brand"><img src="img/logo.png" alt="logo" width="200" height="70"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+			<ul class="navbar-nav ml-auto">
+		 		<li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+				<li class="nav-item dropdown">
+			  	 	<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+					Courses	
+			   		</a>
+			   	<div class="dropdown-menu">
+				   	<a href="#" class="dropdown-item">IOS Mobile App</a>
+				   	<a href="#" class="dropdown-item">Android Mobile App</a>
+				   	<a href="#" class="dropdown-item">Frontend</a>
+				   	<a href="#" class="dropdown-item">Python</a>
+			   	</div> 
                 </li>
-                <li class="parti-list-item">
-                    <img src="img/oljobai-img.png" alt="" class="parti-img">
-                    <div class="parti-about">
-                        <h2 class="parti-title">Olzhobai Iskander</h2>
-                        <span class="parti-major">Instructor</span>
-                        <p class="parti-txt">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                            Aliquam elit malesuada ligula viverra
-                        </p>
-                    </div>
-                </li>
-                <li class="parti-list-item">
-                    <img src="img/erkebek-p.png" alt="" class="parti-img">
-                    <div class="parti-about">
-                        <h2 class="parti-title">Erkebek Abdrakhman uulu</h2>
-                        <span class="parti-major">Full-Stack Web Development</span>
-                        <p class="parti-txt">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                            Aliquam elit malesuada ligula viverra
-                        </p>
-                    </div>
-                </li>
-                <li class="parti-list-item">
-                    <img src="img/Tilek-p.png" alt="" class="parti-img">
-                    <div class="parti-about">
-                        <h2 class="parti-title">Tilek Sulaymanbekov</h2>
-                        <span class="parti-major">Project Manager</span>
-                        <p class="parti-txt">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                            Aliquam elit malesuada ligula viverra
-                        </p>
-                    </div>
-                </li>
-                <li class="parti-list-item">
-                    <img src="img/Aslan-p.jpg" alt="" class="parti-img">
-                    <div class="parti-about">
-                        <h2 class="parti-title">Aslan Arapbaev</h2>
-                        <span class="parti-major">ios Development</span>
-                        <p class="parti-txt">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                            Aliquam elit malesuada ligula viverra
-                        </p>
-                    </div>
-                </li>
-                <li class="parti-list-item">
-                    <img src="img/Izzat-p.png" alt="" class="parti-img">
-                    <div class="parti-about">
-                        <h2 class="parti-title">Izzat Pochoev</h2>
-                        <span class="parti-major">android Development</span>
-                        <p class="parti-txt">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                            Aliquam elit malesuada ligula viverra
-                        </p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </section>
+		  		<li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">Interviews</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">Contacts</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">Log in</a></li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+				 English	
+					</a>
+				<div class="dropdown-menu">
+					<a href="#" class="dropdown-item">Русский</a>
+					<a href="#" class="dropdown-item">Кыргызча</a>
+					<a href="#" class="dropdown-item">English</a>
+					
+				</div> 
+			 </li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+    
+<!-- OUR TEAM -->
+
+<section class="our__team">
+    <div class="container">
+        <div class="section__header">
+            <h1 class="section__title">our special team</h1>
+            <p class="section__txt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+				Expedita saepe perferendis,
+                 quia numquam laboriosam nostrum obcaecati sit culpa ipsam, at, ratione tempora!</p>
+		</div>
+		<ul class="team__list">
+			<li class="team__list__item"><a href="#"><img src="img/timur-img.png" alt="img">
+			<!-- <div class="social-media">
+				<ul class="soial-list">
+					<li><a href="#"><img src="img/insta-icon.zip" alt=""></a></li>
+					<li><a href="#"><img src="img/Vector.png" alt=""></a></li>
+					<li><a href="#"><img src="img/telegram.png" alt=""></a></li>
+				</ul>
+			</div> -->
+			</a></li>
+			<li class="team__list__item"><a href="#"><img src="img/Tilek-p.png" alt="img"></a></li>
+			<li class="team__list__item"><a href="#"><img src="img/oljobai-img.png" alt="img"></a></li>
+			<li class="team__list__item"><a href="#"><img src="img/erkebek-p.png" alt="img"></a></li>
+			<li class="team__list__item"><a href="#"><img src="img/timur-img.png" alt="img"></a></li>
+			<li class="team__list__item"><a href="#"><img src="img/Tilek-p.png" alt="img"></a></li>
+			<li class="team__list__item"><a href="#"><img src="img/oljobai-img.png" alt="img"></a></li>
+			<li class="team__list__item"><a href="#"><img src="img/erkebek-p.png" alt="img"></a></li>
+			<li class="team__list__item"><a href="#"><img src="img/timur-img.png" alt="img"></a></li>
+			<li class="team__list__item"><a href="#"><img src="img/Tilek-p.png" alt="img"></a></li>
+			<li class="team__list__item"><a href="#"><img src="img/oljobai-img.png" alt="img"></a></li>
+			<li class="team__list__item"><a href="#"><img src="img/erkebek-p.png" alt="img"></a></li>	
+		</ul>
+	</div>
+</section>
+
+
+<!-- Interviews -->
+
+
+<section class="interviews__ja">
+    <div class="container">
+        <div class="section__header">
+            <h1 class="section__title">Interviews</h1>
+            <p class="section__txt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+		         Expedita saepe perferendis,
+                 quia numquam laboriosam nostrum obcaecati sit culpa ipsam, at, ratione tempora!</p>
+		</div>
+		<ul class="interviews__list">
+			<li class="card  card__item first" style="width: 18rem;">
+				<iframe src="https://www.youtube.com/embed/PL82lMhx2RU"  class="card-img-top card__img">
+				</iframe>
+				<div class="card-body card__body">
+				  <p class="card-text card__txt">Interview with Nurbek from Google.</p>
+				  <p class="card-text card__txt">Motto: Never give up. Just do it</p>
+				</div>
+			</li>
+			<li class="card card__item" style="width: 18rem;">
+				<iframe src="https://www.youtube-nocookie.com/embed/jaw72iTcPHA"  class="card-img-top card__img">
+				</iframe>
+				<div class="card-body card__body">
+				  <p class="card-text card__txt">Interview with Lorina from Waymo</p>
+				  <p class="card-text card__txt">Motto: Never give up. Just do it</p>
+				</div>
+			</li>
+			<li class="card card__item" style="width: 18rem;">
+				<iframe src="https://www.youtube.com/embed/ebI3Om8Bi5k"  class="card-img-top card__img">
+				</iframe>
+				<div class="card-body card__body">
+				  <p class="card-text card__txt">Interview with Mirlan from Google</p>
+				  <p class="card-text card__txt">Motto: Never give up. Just do it</p>
+				</div>
+			</li>
+			<li class="card  card__item first" style="width: 18rem;">
+				<iframe src="https://www.youtube.com/embed/PL82lMhx2RU"  class="card-img-top card__img">
+				</iframe>
+				<div class="card-body card__body">
+				  <p class="card-text card__txt">Interview with Nurbek from Google.</p>
+				  <p class="card-text card__txt">Motto: Never give up. Just do it</p>
+				</div>
+			</li>
+			<li class="card card__item" style="width: 18rem;">
+				<iframe src="https://www.youtube-nocookie.com/embed/jaw72iTcPHA"  class="card-img-top card__img">
+				</iframe>
+				<div class="card-body card__body">
+				  <p class="card-text card__txt">Interview with Lorina from Waymo</p>
+				  <p class="card-text card__txt">Motto: Never give up. Just do it</p>
+				</div>
+			</li>
+			<li class="card card__item" style="width: 18rem;">
+				<iframe src="https://www.youtube.com/embed/ebI3Om8Bi5k"  class="card-img-top card__img">
+				</iframe>
+				<div class="card-body card__body">
+				  <p class="card-text card__txt">Interview with Mirlan from Google</p>
+				  <p class="card-text card__txt">Motto: Never give up. Just do it</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+</section>
+
+<!-- why you should learn programming -->
 
 
 
+<div class="container">
+<div class="card mb-3 " style="max-width: 1150px; max-height: 368px; border-radius: 15px;">
+	<div class="row no-gutters card__code">
+	  <div class="col-md-6 code__txt">
+		<div class="card-body">
+		  <h5 class="card-title title__text ">Why you should learn to <span class="code_s">code?</h5>
+		</div>
+	  </div>
+	   <div class="col-md-6 ">
+		<iframe src="https://www.youtube.com/embed/QzSFa8TpKwQ"  class="card-img card__video" ></iframe>
+	  </div>
+	</div>
+  </div>
+</div>
 
 
 
@@ -100,5 +185,12 @@
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.bundle.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script src="js/slider__team__slick.js"></script>
+<script src="js/slider__interviews__slick.js"></script>
+
 </body>
 </html>
